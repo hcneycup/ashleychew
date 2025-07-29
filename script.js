@@ -155,7 +155,7 @@ Professional Certifications:
 📧 Email: hcneycup@gmail.com
 🐱 GitHub: https://github.com/hcneycup
 💼 LinkedIn: https://www.linkedin.com/in/chewhoyeng/
-🌐 Website: https://www.linkedin.com/in/chewhoyeng/
+🌐 Website: https://hcneycup.github.io/ashleychew/
 
 Feel free to reach out! I'm always open to new opportunities and interesting projects. `;
         }
