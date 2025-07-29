@@ -132,10 +132,10 @@ body {
 
 /* Terminal prompt */
 .prompt {
-    color: #ff1493;
+    color: #00ffff;
     margin-right: 5px;
     flex-shrink: 0;
-    text-shadow: 0 0 10px rgba(255, 20, 147, 0.7);
+    text-shadow: 0 0 10px rgba(0, 200, 255, 0.8);
 }
 
 /* User/host/path colors for prompt */
