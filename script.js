@@ -104,7 +104,7 @@ Currently Exploring:
     - Tech: HTML, CSS, JavaScript
     - A terminal-style portfolio
     
-2. BIM (Malaysian Sign Language) Detection System
+2. BIM (Malaysian Sign Language) Detection System - Ongoing
     - Tech: Python, OpenCV
     - An object detection system for BIM (Malaysian Sign Language)
     
