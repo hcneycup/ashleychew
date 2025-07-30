@@ -154,7 +154,7 @@ body {
     text-shadow: 0 0 8px rgba(255, 20, 147, 0.6);
 }
 
-/* The actual input field where user types - Updated with thick cursor */
+/* The actual input field where user types - Simple thick cursor */
 .terminal-input {
     background: transparent;
     border: none;
@@ -164,28 +164,11 @@ body {
     outline: none;
     flex: 1;
     caret-color: #ff1493;
-    text-shadow: 0 0 0 #ff1493; /* This creates a thicker cursor effect */
-    font-weight: bold; /* Makes the cursor appear thicker */
-    border-right: 2px solid transparent; /* Reserve space for cursor */
+    font-weight: bold;
 }
 
-/* Create a thicker cursor using text-shadow technique */
 .terminal-input:focus {
-    text-shadow: 
-        1px 0 0 currentColor,
-        2px 0 0 currentColor,
-        3px 0 0 currentColor;
-    animation: cursor-blink 1s infinite;
-}
-
-@keyframes cursor-blink {
-    0%, 50% { 
-        caret-color: #ff1493; 
-        box-shadow: 0 0 5px rgba(255, 20, 147, 0.8);
-    }
-    51%, 100% { 
-        caret-color: transparent; 
-    }
+    caret-color: #ff1493;
 }
 
 /* Placeholder text styling */
