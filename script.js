@@ -236,15 +236,3 @@ window.addEventListener('load', function () {
         addLine(`<span class="welcome-message" style="color:#ffb6c1;">✨ Terminal ready! Type 'hello' to get started. ✨</span>`);
     }, 500);
 });
-
-// Make sure the input field shows the cursor properly
-terminalInput.addEventListener('focus', function() {
-    this.style.caretColor = '#ff1493';
-});
-
-// Ensure cursor stays visible
-setInterval(() => {
-    if (document.activeElement === terminalInput) {
-        terminalInput.style.caretColor = '#ff1493';
-    }
-}, 100);
