@@ -41,7 +41,7 @@ BA (Hons) Creative Direction, University of the Arts London
 🌟Interests: 
 Coding, interactive media/art, music
 
-I am an emerging programmer which enjoys merging art and technology!`;
+I am creative which occasionally codes!`;
         }
     },
 
@@ -51,19 +51,19 @@ I am an emerging programmer which enjoys merging art and technology!`;
             return `💻Technical Skills:
 
 Programming Languages:
-- JavaScript ⭐⭐
+- JavaScript ⭐⭐⭐
 - HTML/CSS  ⭐⭐⭐⭐
 - Python    ⭐⭐⭐
 
 Frameworks & Tools: 
-- React.js
 - p5.js
+- Node.js
 - Git/GitHub
 - VS Code
 
 Currently Learning: 
 - Java
-- Node.js
+- React.js
 - Gen AI`;
         }
     },
