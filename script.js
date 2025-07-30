@@ -164,7 +164,7 @@ Feel free to reach out! I'm always open to new opportunities and interesting pro
     clear: {
         description: 'Clear the terminal',
         action: () => {
-            terminalContent.innerHTML = `
+            terminalContent.innerHTML = \`
                 <div class="line">
                     <span class="output">Terminal cleared! </span>
                 </div>
@@ -172,11 +172,64 @@ Feel free to reach out! I'm always open to new opportunities and interesting pro
                     <span class="output">Type 'hello' to see available commands.</span>
                 </div>
                 <br>
-            `;
+            \`;
             return '';
         }
     }
 };
+
+// Create and manage custom cursor
+let customCursor = null;
+
+function createCustomCursor() {
+    if (customCursor) return;
+    
+    customCursor = document.createElement('div');
+    customCursor.className = 'custom-cursor';
+    customCursor.style.cssText = \`
+        position: absolute;
+        width: 12px;
+        height: 18px;
+        background-color: #ff1493;
+        animation: blink-terminal-cursor 1s infinite;
+        pointer-events: none;
+        z-index: 10;
+        top: 50%;
+        transform: translateY(-50%);
+    \`;
+    
+    const inputContainer = document.querySelector('.input-container');
+    inputContainer.style.position = 'relative';
+    inputContainer.appendChild(customCursor);
+}
+
+function updateCursorPosition() {
+    if (!customCursor) return;
+    
+    const prompt = document.querySelector('.prompt');
+    const input = terminalInput;
+    const inputValue = input.value;
+    
+    // Create a temporary span to measure text width
+    const tempSpan = document.createElement('span');
+    tempSpan.style.cssText = \`
+        position: absolute;
+        visibility: hidden;
+        white-space: pre;
+        font-family: inherit;
+        font-size: inherit;
+    \`;
+    tempSpan.textContent = inputValue;
+    document.body.appendChild(tempSpan);
+    
+    const textWidth = tempSpan.offsetWidth;
+    const promptWidth = prompt.offsetWidth;
+    
+    // Position cursor after the text
+    customCursor.style.left = (promptWidth + textWidth + 5) + 'px';
+    
+    document.body.removeChild(tempSpan);
+}
 
 // function to add a new line to the terminal display
 function addLine(content) {
@@ -194,20 +247,20 @@ function executeCommand(cmd) {
     const command = cmd.toLowerCase().trim();
 
     //show what the user typed 
-    addLine(`<span class="prompt">visitor@portfolio:~$</span> <span style="color: white;">${cmd}</span>`);
+    addLine(\`<span class="prompt">visitor@portfolio:~$</span> <span style="color: white;">\${cmd}</span>\`);
 
     // check if the command exists and run 
     if (commands[command]) {
         const output = commands[command].action();
         if (output) {
-            addLine(`<span class="output">${output}</span>`);
+            addLine(\`<span class="output">\${output}</span>\`);
         }
     } else if (command === '') {
         // user just pressed Enter with no command - do nothing 
     } else {
         // command not found - show error message 
-        addLine(`<span style="color: #ff4444;">Command not found: '${command}'</span>`);
-        addLine(`<span class="output">Type 'hello' to see available commands.</span>`);
+        addLine(\`<span style="color: #ff4444;">Command not found: '\${command}'</span>\`);
+        addLine(\`<span class="output">Type 'hello' to see available commands.</span>\`);
     }
 
     // add spacing after each command
@@ -220,19 +273,54 @@ terminalInput.addEventListener('keydown', function (e) {
         const command = this.value;
         executeCommand(command);
         this.value = '';
+        updateCursorPosition(); // Update cursor position after clearing input
     }
+});
+
+// Update cursor position as user types
+terminalInput.addEventListener('input', updateCursorPosition);
+
+// Update cursor position on focus/blur
+terminalInput.addEventListener('focus', () => {
+    if (customCursor) customCursor.style.display = 'block';
+    updateCursorPosition();
+});
+
+terminalInput.addEventListener('blur', () => {
+    if (customCursor) customCursor.style.display = 'block'; // Keep cursor visible even when not focused
 });
 
 //when user clicks anywhere on the page, focus the input 
 document.addEventListener('click', function () {
     terminalInput.focus();
+    updateCursorPosition();
 });
 
 //make sure input is focused when page load
 terminalInput.focus();
 
 window.addEventListener('load', function () {
+    // Hide the default cursor and create custom one
+    terminalInput.style.caretColor = 'transparent';
+    createCustomCursor();
+    updateCursorPosition();
+    
     setTimeout(() => {
-        addLine(`<span class="welcome-message" style="color:#ffb6c1;">✨ Terminal ready! Type 'hello' to get started. ✨</span>`);
+        addLine(\`<span class="welcome-message" style="color:#ffb6c1;">✨ Terminal ready! Type 'hello' to get started. ✨</span>\`);
     }, 500);
 });
+
+// Add the cursor animation keyframes to the document
+const style = document.createElement('style');
+style.textContent = \`
+    @keyframes blink-terminal-cursor {
+        0%, 50% {
+            opacity: 1;
+            box-shadow: 0 0 8px rgba(255, 20, 147, 0.8);
+        }
+        51%, 100% {
+            opacity: 0;
+        }
+    }
+\`;
+document.head.appendChild(style);
