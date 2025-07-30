@@ -154,7 +154,7 @@ body {
     text-shadow: 0 0 8px rgba(255, 20, 147, 0.6);
 }
 
-/* The actual input field where user types */
+/* The actual input field where user types - Updated with thick cursor */
 .terminal-input {
     background: transparent;
     border: none;
@@ -163,36 +163,8 @@ body {
     font-size: inherit;
     outline: none;
     flex: 1;
-    caret-color: transparent;
-    position: relative;
-}
-
-.terminal-input:focus+.cursor-block,
-.cursor-block {
-    position: absolute;
-    width: 12px;
-    height: 18px;
-    background-color: #ff1493;
-    animation: blink-terminal-cursor 1s infinite;
-    pointer-events: none;
-    z-index: 1;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 2px;
-}
-
-@keyframes blink-terminal-cursor {
-
-    0%,
-    50% {
-        opacity: 1;
-        box-shadow: 0 0 8px rgba(255, 20, 147, 0.8);
-    }
-
-    51%,
-    100% {
-        opacity: 0;
-    }
+    caret-color: #ff1493; /* Make the cursor pink and visible */
+    caret-width: thick; /* This makes the cursor thicker in supported browsers */
 }
 
 /* Placeholder text styling */
