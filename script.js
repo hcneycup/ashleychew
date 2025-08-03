@@ -106,7 +106,7 @@ Currently Exploring:
     
 2. Daily Football Matches Tracker 
     - Tech: HTML, CSS, JavaScript, Electron.js, (Football-Data API)
-    - Designed and developed a desktop football matches tracker using Electron.js to display real-time matches from from major competitions (PL, CL, Bundesliga, LA LIGA, European Championships)
+    - Designed and developed a desktop football matches tracker using Electron.js to display real-time matches from major competitions (PL, CL, Bundesliga, LA LIGA, European Championships)
     - Integrated RESTful API (Football-Data-org) to fetch and display live match data 
     
 Want to see more? Check out my GitHub`;
