@@ -144,7 +144,8 @@ Key Skills Developed: Leadership, technical problem-solving, project management,
 Professional Certifications:
 <a href="https://www.certiport.com/portal/Pages/PrintTranscriptInfo.aspx?action=Cert&id=440&cvid=vBAgzlU70QnCWrpD2lJxvw==" target="blank" style="color: #ff69b4; text-decoration: underline;">Adobe InDesign Certified in Print & Digital Publication</a> | 2024
 <a href="https://coursera.org/share/79ddea4c0cfdbbb887ad132afd462bc5" target="blank" style="color: #ff69b4; text-decoration: underline;">Python for Everybody Specialisation by University of Michigan (Coursera)</a> | 2025
-<a href="https://coursera.org/share/53d6fd1161071998c0ecab10980e11c4" target="blank" style="color: #ff69b4; text-decoration: underline;">Python Data Structures by University of Michigan (Coursera)</a> | 2025`;
+<a href="https://coursera.org/share/53d6fd1161071998c0ecab10980e11c4" target="blank" style="color: #ff69b4; text-decoration: underline;">Python Data Structures by University of Michigan (Coursera)</a> | 2025
+<a href="https://coursera.org/share/3a6b83d7e809846db02a75fbbe637a0a" target="blank" style="color: #ff69b4; text-decoration: underline;">IBM Product Manager Professional Certificate (Coursera)</a> | 2025`;
         }
     },
 
