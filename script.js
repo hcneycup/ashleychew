@@ -30,7 +30,7 @@ Hi! I'm Ashley Chew. With roots in Creative Direction, I am a multi-disciplinary
 I am fluent in multiple languages including: English, Mandarin, Cantonese, Bahasa Melayu
 
 💡What I do: 
-Explore experiences that blur the boundaries between the digital and physical worlds.
+I blend creative strategy with technical skills to build user-centered digital solutions. 
 
 📍Location: 
 London, UK
