@@ -119,17 +119,22 @@ Want to see more? Check out my GitHub`;
             return `💼Work Experience:
 
  Digital Marketing Intern | House of Sunny | Jan 2025 - Mar 2025
-   - Conducted market research and presented insights to support campaign planning and strategic decisions
-   - Tracked marketing KPIs, performed post-campaign analysis, and contributed to reporting deliverables 
-   - Used Adobe Creative Suite to design and edit digital assets for social media and retail use 
+   - Conducted weekly market research and presented findings to support campaign planning decisions
+   - Managed post-campaign analysis for 2-3 monthly campaigns, tracking KPIs and delivering performance reports
+   - Conceptualised campaign strategies that achieved 150% increase in user engagement
 
  Front of House | Urban Pubs and Bars | 2022 - 2024
-   - Streamlined operations by analysing customer behaviour and optimizing inventory processes 
-   - Built strong multitasking and interpersonal skills by engaging a diverse customer base in a fast-paced environment 
+   - Improved operational eﬃciency by identifying customer flow patterns and suggesting inventory management adjustments
+   - Handled multiple priorities while maintaining quality standards in a high-volume, time-sensitive environment
+   - Resolved customer issues and communicated eﬀectively with diverse clientele and team members
 
  Student Representative | INTO London World Educational Centre | 2021 - 2022
-   - Acted as a liaison between students and faculty, enhancing communication and engagement 
-   - Organised community events to improve student networking and experience 
+   - Facilitated communication between students and faculty to address concerns and improve engagement
+   - Organised community networking events, overseeing planning, logistics, and execution to enhance student experience
+
+ Volunteer Coordinator | Fettes Park Baptist Kindergarten | 2018 - 2020
+   - Supervised and facilitated educational activities for 20+ children aged 6-12 during weekend programs
+   - Led multiple activities including games, classes, and bible reading sessions
 
 
 Key Skills Developed: Leadership, technical problem-solving, project management, client communication`;
