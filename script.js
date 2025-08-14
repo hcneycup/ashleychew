@@ -107,7 +107,7 @@ Currently Exploring:
 2. Daily Football Matches Tracker 
     - Tech: HTML, CSS, JavaScript, Electron.js
     - Built a desktop football matches tracker using Electron.js to display real-time matches across 5+ major leagues with live-scores and match events (cards/goals)
-    - Integrated RESTful API ((API-Sports) with auto-refresh functionality for live match data and player event tracking 
+    - Integrated RESTful API (API-Sports) with auto-refresh functionality for live match data and player event tracking 
     
 Want to see more? Check out my GitHub`;
         }
