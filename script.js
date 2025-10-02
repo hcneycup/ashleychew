@@ -108,6 +108,10 @@ Currently Exploring:
     - Tech: HTML, CSS, JavaScript, Electron.js
     - Built a desktop football matches tracker using Electron.js to display real-time matches across 5+ major leagues with live-scores and match events (cards/goals)
     - Integrated RESTful API (API-Sports) with auto-refresh functionality for live match data and player event tracking 
+3. Real-time Sign Language Detection System 
+    - Tech: Touchdesigner, MediaPipe, Python
+    - Engineered a real-time sign-language detection system using TouchDesigner, MediaPipe and rule-based pattern matching to detect alphabet gestures
+    - Coded custom Python scripts for calculations including angular measurements, distance computations and motion detection to enhance accuracy
     
 Want to see more? Check out my GitHub`;
         }
